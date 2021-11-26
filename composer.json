@@ -1,0 +1,13 @@
+{
+    "name": "ds9_burndown/ds9_burndown",
+    "description": "Changes in Burndown.",
+    "type": "drupal-custom-module",
+    "license": "GPL-2.0-or-later",
+    "support": {
+        "source": "https://github.com/CathLind/ds9_burndown"
+    },
+    "require": {
+        "drupal/core": "^9 || ^10"
+    },
+    "minimum-stability": "RC"
+}
