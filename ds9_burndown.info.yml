@@ -1,0 +1,7 @@
+name: 'DS9 Burndown additions'
+type: module
+description: 'Create extra functionality to Burndown in the DS9 site'
+core_version_requirement: ^9 | ^10
+package: 'TCM'
+dependencies:
+  - burndown
