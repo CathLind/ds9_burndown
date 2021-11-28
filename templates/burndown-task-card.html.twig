@@ -49,13 +49,19 @@
     {% endfor %}
   {% endif %}
   </div>
+  
+  <div class="binder_links">
+  	{{ drupal_view('dashboard_burndown_task', 'block_1', data.id) }}
+  </div>
 
   <div class="card_footer">
 
       <div class="priority priority-{{ data.priority }}"></div>
     
-      <div class="estimate estimate-type-{{ data.estimate_type }} estimate-{{ data.estimate }} circle">{{ data.estimate }}</div>
       
+        <div class="estimate estimate-type-{{ data.estimate_type }} estimate-{{ data.estimate }} circle">{{ data.estimate }}</div>
+      
+
       <div class="ticket_id">
         <a href="{{ url('<front>') }}burndown/task/{{ data.id }}/edit"
           class="use-ajax task_id{% if data.is_completed %} completed{% endif %}"
